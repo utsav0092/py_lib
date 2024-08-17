@@ -81,6 +81,25 @@
         <li>NumPy is a foundational library for data science and scientific computing in Python.</li>
         <li>It provides efficient and easy-to-use tools for array manipulation and mathematical operations.</li>
     </ul>
+ <h1>Seaborn Overview</h1>
+    <p><strong>Seaborn</strong> is a Python library for creating attractive and informative statistical plots with minimal code. It builds on Matplotlib and is great for visualizing complex datasets.</p>
 
-</body>
-</html>
+<h2>Key Features:</h2>
+    <ul>
+        <li><strong>Easy Plots</strong>: Offers high-level functions for quick creation of common plots (e.g., histograms, bar plots, scatter plots).</li>
+        <li><strong>Beautiful Themes</strong>: Comes with built-in color palettes and themes for polished visuals.</li>
+        <li><strong>Pandas Integration</strong>: Works seamlessly with Pandas DataFrames, making data manipulation and visualization straightforward.</li>
+        <li><strong>Faceting</strong>: Allows splitting data into subsets and creating grid layouts of plots for easy comparison.</li>
+        <li><strong>Customization</strong>: Highly customizable and integrates well with Matplotlib for advanced tweaks.</li>
+    </ul>
+
+<h2>Example:</h2>
+    <pre><code>
+    import seaborn as sns 
+    import matplotlib.pyplot as plt
+    tips = sns.load_dataset("tips")
+    sns.scatterplot(data=tips, x="total_bill", y="tip", hue="day", style="time")
+    plt.show()
+    </code></pre>
+
+<p>Seaborn is ideal for quick, beautiful, and informative statistical visualizations.</p>
