@@ -151,3 +151,78 @@ print(df.iloc[1])  # Accessing a row by position
 
 <h2>Conclusion</h2>
     <p>Pandas is an essential tool for anyone working with data in Python. Its intuitive API and powerful features make data handling and analysis both efficient and effective.</p>
+
+<h1>Matplotlib Basics in Python</h1>
+
+<h2>Overview</h2>
+    <p>Matplotlib is a powerful library in Python used for creating a wide range of static, interactive, and animated visualizations. It’s highly versatile, customizable, and integrates seamlessly with other libraries like NumPy, pandas, and SciPy.</p>
+
+<h2>Why Use Matplotlib?</h2>
+    <ul>
+        <li><strong>Data Visualization:</strong> Essential for representing data graphically to identify patterns, trends, and correlations.</li>
+        <li><strong>Versatility:</strong> Supports multiple plot types including line plots, bar charts, histograms, scatter plots, and more.</li>
+        <li><strong>Customization:</strong> Extensive options to modify plots for specific needs.</li>
+        <li><strong>Integration:</strong> Easily works with popular Python libraries like NumPy and pandas.</li>
+    </ul>
+
+ <h2>Getting Started</h2>
+
+<h3>1. Installation</h3>
+    <p>Install Matplotlib using pip:</p>
+    <pre><code>pip install matplotlib</code></pre>
+
+<h3>2. Importing Matplotlib</h3>
+    <p>Matplotlib is typically imported as follows:</p>
+    <pre><code>import matplotlib.pyplot as plt</code></pre>
+
+<h3>3. Basic Plotting</h3>
+    <p>To create a simple line plot:</p>
+    <pre><code>plt.plot([1, 2, 3, 4], [10, 20, 25, 30])<br>plt.show()</code></pre>
+
+<h3>4. Labels and Titles</h3>
+    <p>Add axis labels and a title to your plot:</p>
+    <pre><code>plt.xlabel('X Axis')<br>plt.ylabel('Y Axis')<br>plt.title('Simple Plot')</code></pre>
+
+<h3>5. Plot Types</h3>
+    <ul>
+        <li><strong>Line Plot:</strong>
+            <pre><code>plt.plot(x, y)</code></pre>
+        </li>
+        <li><strong>Bar Plot:</strong>
+            <pre><code>plt.bar(x, height)</code></pre>
+        </li>
+        <li><strong>Histogram:</strong>
+            <pre><code>plt.hist(data, bins)</code></pre>
+        </li>
+        <li><strong>Scatter Plot:</strong>
+            <pre><code>plt.scatter(x, y)</code></pre>
+        </li>
+    </ul>
+
+<h3>6. Customizing Plots</h3>
+    <p>Change line style and color:</p>
+    <pre><code>plt.plot(x, y, color='green', linestyle='dashed')</code></pre>
+    <p>Add grid lines:</p>
+    <pre><code>plt.grid(True)</code></pre>
+
+<h3>7. Subplots</h3>
+    <p>To create multiple plots in one figure:</p>
+    <pre><code>plt.subplot(1, 2, 1)  # 1 row, 2 columns, 1st plot<br>plt.plot(x, y)<br><br>plt.subplot(1, 2, 2)  # 1 row, 2 columns, 2nd plot<br>plt.bar(x, height)</code></pre>
+
+<h3>8. Saving Figures</h3>
+    <p>Save your plot to a file:</p>
+    <pre><code>plt.savefig('plot.png')</code></pre>
+
+<h3>9. Show Plot</h3>
+    <p>Display the plot (typically the last command):</p>
+    <pre><code>plt.show()</code></pre>
+
+<h3>10. Customization</h3>
+    <ul>
+        <li><strong>Adjust figure size:</strong>
+            <pre><code>plt.figure(figsize=(10, 5))</code></pre>
+        </li>
+        <li><strong>Add legends:</strong>
+            <pre><code>plt.legend(['Label 1', 'Label 2'])</code></pre>
+        </li>
+    </ul>
